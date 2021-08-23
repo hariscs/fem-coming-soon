@@ -1,0 +1,52 @@
+.banner {
+	text-align: center;
+
+	&__bg {
+		background: url(/images/hero-mobile.jpg) no-repeat;
+
+		order: -1;
+	}
+
+	&__title {
+		color: $darkGrayishRed;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		line-height: 1;
+
+		span {
+			color: $desaturatedRed;
+			font-weight: 300;
+			display: block;
+		}
+	}
+
+	&__text {
+		max-width: 35ch;
+	}
+
+	&__info {
+		padding: 3.5em 0;
+	}
+
+	&__form {
+		&--input {
+			font-family: inherit;
+			padding: 1em;
+			border-radius: 100vh;
+			border: 1px solid $desaturatedRed;
+		}
+
+		&--arrow {
+			display: block;
+			padding: 0.5em 1.5em;
+			background: linear-gradient(135deg, $lightPink, $darkPink);
+			border-radius: 100vh;
+		}
+	}
+}
+
+.grid {
+	grid-template-rows: 250px 1fr;
+	grid-template-columns: 1fr;
+}
