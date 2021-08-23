@@ -1,9 +1,7 @@
 .banner {
 	text-align: center;
 
-	&__bg {
-		background: url(/images/hero-mobile.jpg) no-repeat;
-
+	&__img {
 		order: -1;
 	}
 
@@ -44,9 +42,4 @@
 			border-radius: 100vh;
 		}
 	}
-}
-
-.grid {
-	grid-template-rows: 250px 1fr;
-	grid-template-columns: 1fr;
 }
