@@ -55,7 +55,7 @@
 			box-shadow: 3px 7px 22px 0px rgba(0, 0, 0, 0.2);
 
 			&:hover {
-				opacity: 0.8;
+				background: lighten($lightPink, 1%);
 			}
 		}
 	}
