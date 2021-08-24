@@ -3,6 +3,8 @@
 
 	&__img {
 		order: -1;
+		max-width: 375px;
+		margin: 0 auto;
 	}
 
 	&__title {
@@ -11,6 +13,7 @@
 		text-transform: uppercase;
 		letter-spacing: 10px;
 		line-height: 1;
+		margin-bottom: 0.6em;
 
 		span {
 			color: $desaturatedRed;
@@ -21,6 +24,7 @@
 
 	&__text {
 		max-width: 35ch;
+		margin-bottom: 2em;
 	}
 
 	&__info {
@@ -28,18 +32,30 @@
 	}
 
 	&__form {
+		position: relative;
+
 		&--input {
 			font-family: inherit;
-			padding: 1em;
+			width: 100%;
+			padding: 1.2em;
 			border-radius: 100vh;
 			border: 1px solid $desaturatedRed;
+			background: $palePink;
+		}
+
+		&--btn {
+			border: 0;
+			position: absolute;
+			top: 0;
+			left: 280px;
+			display: block;
+			padding: 1em 1.5em;
+			background: linear-gradient(135deg, $lightPink, $darkPink);
+			border-radius: 100vh;
 		}
 
 		&--arrow {
-			display: block;
-			padding: 0.5em 1.5em;
-			background: linear-gradient(135deg, $lightPink, $darkPink);
-			border-radius: 100vh;
+			padding: 0.5em;
 		}
 	}
 }
