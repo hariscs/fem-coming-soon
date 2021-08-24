@@ -32,7 +32,7 @@
 	}
 
 	&__form {
-		position: relative;
+		width: 100%;
 
 		&--input {
 			font-family: inherit;
@@ -41,21 +41,22 @@
 			border-radius: 100vh;
 			border: 1px solid $desaturatedRed;
 			background: $palePink;
+			margin-left: 2em;
 		}
 
 		&--btn {
 			border: 0;
-			position: absolute;
-			top: 0;
-			left: 280px;
+			transform: translateX(-3.5em);
 			display: block;
-			padding: 1em 1.5em;
+			padding: 1em 2em;
 			background: linear-gradient(135deg, $lightPink, $darkPink);
 			border-radius: 100vh;
-		}
+			cursor: pointer;
+			box-shadow: 3px 5px 16px 1px rgb(0 0 0 / 19%);
 
-		&--arrow {
-			padding: 0.5em;
+			&:hover {
+				font-size: 4rem;
+			}
 		}
 	}
 }
