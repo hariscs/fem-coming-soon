@@ -52,10 +52,10 @@
 			background: linear-gradient(135deg, $lightPink, $darkPink);
 			border-radius: 100vh;
 			cursor: pointer;
-			box-shadow: 3px 5px 16px 1px rgb(0 0 0 / 19%);
+			box-shadow: 3px 7px 22px 0px rgba(0, 0, 0, 0.2);
 
 			&:hover {
-				font-size: 4rem;
+				opacity: 0.8;
 			}
 		}
 	}
