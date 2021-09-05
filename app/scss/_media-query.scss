@@ -1,0 +1,6 @@
+// media query for larger screens
+@mixin desktop {
+	@media (min-width: 950px) {
+		@content;
+	}
+}

@@ -1,6 +1,7 @@
 html {
 	font-size: 100%;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 *,
@@ -41,6 +42,11 @@ p {
 
 .grid {
 	display: grid;
+
+	@include desktop {
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+	}
 }
 
 .mx-auto {

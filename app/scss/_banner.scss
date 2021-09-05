@@ -1,10 +1,19 @@
 .banner {
 	text-align: center;
 
+	@include desktop {
+		text-align: left;
+	}
+
 	&__img {
 		order: -1;
 		max-width: 375px;
 		margin: 0 auto;
+
+		@include desktop {
+			order: 0;
+			max-width: unset;
+		}
 	}
 
 	&__title {
@@ -29,6 +38,10 @@
 
 	&__info {
 		padding: 3.5em 0;
+
+		@include desktop {
+			margin-top: 8em;
+		}
 	}
 
 	&__form {
@@ -44,6 +57,10 @@
 			border: 1px solid $desaturatedRed;
 			background: $palePink;
 			margin-left: 2em;
+
+			@include desktop {
+				margin-left: 0;
+			}
 		}
 
 		&--btn {

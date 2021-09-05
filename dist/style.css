@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -43,6 +44,13 @@ p {
   display: grid;
 }
 
+@media (min-width: 950px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -50,6 +58,14 @@ p {
 
 .header {
   padding: 30px 13px;
+}
+
+@media (min-width: 950px) {
+  .header {
+    position: absolute;
+    left: 4%;
+    top: 2%;
+  }
 }
 
 .header .logo {
@@ -60,10 +76,23 @@ p {
   text-align: center;
 }
 
+@media (min-width: 950px) {
+  .banner {
+    text-align: left;
+  }
+}
+
 .banner__img {
   order: -1;
   max-width: 375px;
   margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .banner__img {
+    order: 0;
+    max-width: unset;
+  }
 }
 
 .banner__title {
@@ -90,6 +119,12 @@ p {
   padding: 3.5em 0;
 }
 
+@media (min-width: 950px) {
+  .banner__info {
+    margin-top: 8em;
+  }
+}
+
 .banner__form {
   width: 100%;
   position: relative;
@@ -104,6 +139,12 @@ p {
   border: 1px solid #ce9797;
   background: #fff5f5;
   margin-left: 2em;
+}
+
+@media (min-width: 950px) {
+  .banner__form--input {
+    margin-left: 0;
+  }
 }
 
 .banner__form--btn {
