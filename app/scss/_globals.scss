@@ -43,23 +43,7 @@ p {
 	display: grid;
 }
 
-.flex {
-	display: flex;
-
-	&-ai-c {
-		align-items: center;
-	}
-
-	&-jc-c {
-		justify-content: center;
-	}
-
-	&-d-c {
-		flex-direction: column;
-	}
-}
-
-.m-lr-a {
+.mx-auto {
 	margin-left: auto;
 	margin-right: auto;
 }
